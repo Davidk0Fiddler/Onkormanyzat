@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="viewport" content="widh=device-widthy initial-scale=1.0">
+        <title>Önkormányzat</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="../style/index_style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <div class="oldal">
+        <div class="bal_oldal">
+            <div class="logo">
+                <img src="../images/onkormanyzat_logo.jpg">
+                <p>London Undergound Önkormányzat</p>
+            </div>
+            <hr width="100%"> 
+            <div class="linkek">
+                <a><button onclick="openInformaciok()">Információk</button></a>
+                <a><button onclick="openDokumentumok()">Dokumentumok</button></a>
+                <a><button onclick="openFelhivasok()">Felhívások</button></a>
+            </div>
+        </div>
+        <div class="jobb_oldal">
+
+
+            <h1 class="fooldal_cim" id>Köszöntelek a London Underground szerver önkormányzatának hivatalos oldalán!</h1>
+
+
+            <!-- Információs oldal-->
+            <div class="informaciok_oldal" id="open_egy">
+                <a onclick="closeInformaciok()" class="closebutton_egy">X</a>
+                <br><br><br>
+
+
+                <i class="Kiiras">
+                <span class="material-symbols-outlined"  id="icon_closed_one"> arrow_forward_ios </span><span class="material-symbols-outlined" id="icon_opened_one" > expand_more </span> <p class="cim"  onclick="openerSzabalyzat()">Szabályzat</p>
+                </i>
+
+                <div class="szabalyzat" id="szabalyzat">
+                    <p>Felhívjuk a figyelmét, hogy a szabályzat nem ismerete, nem mentesít alóluk! Emellett a szabályzat módosításának jogát fenntartjuk!</p>
+                    <h2><u>Dokumentumokkal kapcsolatos szabályzat</u></h2>
+                    <ul>
+                        <li>A dokumentumokat kizárólag nyomós indokkal tölthetőek ki. A nem komoly iratok beérkezését a rendszer automatikusan tiltja! </li>
+                        <li>A dokumentumok minden szegmensét kötelező kitölteni.</li>
+                        <li>A dokumentumok válaszára irányuló privát vagy nyilvános kérdéseket azonnal elutasítjuk, a dokumentumot érvénytelenítjük.</li>
+                        <li>Az önkormányzati szervezet kötelező információkat kiadni a dokumentum létrehozójának az irat rendszerbeli állapotáról.</li>
+                    </ul>
+                    <h2><u>Az Önkormányzati épület házszabályzata</u></h2>
+                    <ul>
+                        <li>Az Önkormányzati épület területén tilos bármiféle illegális tevékenységet végezni. Az illegális tevékenységeket a Büntető Törvény Könyvben találják!</li>
+                        <li>Az Önkormányzat épületén bellül tilos a dohányzás, és bármiféle gyújtogatás!</li>
+                        <li>Az Önkormányzat épületén bellül tilos hangos zajokat kelletni, kiadni, készíteni.</li>
+                        <li>Az Önkormányzat épületébel lévő szobákat a rendeltetésük szerint használni kötelező! Aki ezek szerint használja, kitiltásra kerül a házból, egy bizonyos időre.</li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <!-- Dokumentum-sémák oldal-->
+            <div class="dokumentum_semak" id="open_ketto">
+                <a onclick="closeDokumentumok()" class="closebutton_ketto">X</a>
+                <br><br><br><br><br>
+                <a href="kisiparosalapitasidokumentum.html" target="_blank"><button class="dokumentum_iras_gomb">Kisiparos szervezet alapítási dokumentum létrehozása</button></a>
+            </div>
+
+            <!-- Felhívások oldal-->
+            <div class="felhivasok" id="open_harom">
+                <a onclick="closeFelhivasok()" class="closebutton_harom">X</a>
+            </div>
+        </div>
+        </div>
+
+        <script src="../scripts/script.js"></script>
+    </body>
+</html>

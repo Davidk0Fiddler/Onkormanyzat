@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kisiparosi vállalkozás alapítása</title>
+    <link rel="stylesheet" href="..//style/kisiparosalapitasidokumentum.css">
+</head>
+<body>
+    <div class="container">
+        <h1><u>Kisiparosi vállalkozás alapítása dokumentum</u></h1>
+        <hr>
+        <form action="https://formsubmit.co/67ee22337a192d9fc6403d7dab744dc0" method="POST">
+
+
+
+            <h3><u>Információk az alapító személyről</u></h3>
+            <p>Alapító személy neve</p>
+            <input type="text" placeholder="Vezetéknév Keresztnév" required id="alapito_nev">
+            <p>Alapító személy születési dátuma</p>
+            <input type="date" required id="alapito_szul">
+            <p>Alapító személy internetes elérhetősége (e-mail)</p>
+            <input type="email" placeholder="valami@gmail.com" required id="alapito_email">
+            <p>Alapító személy telefonszáma</p>
+            <input type="text"  required id="alapito_tel">
+            <p>Erkölcsi tanusítvány száma</p>
+            <input type="text" placeholder="0123a4567" required id="alapito_erkszam">
+
+            <hr>
+
+            <h3><u>Információk az alapítani kívánó vállalkozásról</u></h3>
+            <p>A vállalkozás neve</p>
+            <input type="text" placeholder="vállalkozás név" required id="ceg_nev">
+            <p>A vállalkozás címe</p>
+            <input type="text" placeholder=" valamilyenutca1" required id="ceg_cim">
+            <p>A vállalkozás internetes elérhetősége</p>
+            <input type="email" placeholder="vallakozasemail@gmail.com" id="ceg_email">
+            <p>A vállalkozás kezdetleges alkalmazottainak száma</p>
+            <input type="text" id="ceg_alkszam">
+            <p>A vállalkozás kezdetleges alkalmazottainak adatai (név,e-mail cím,születési dátum, telefonszám)</p>
+            <textarea cols="60  " rows="10" id="ceg_alkinfo"></textarea>
+            <p>A vállalkozás profilja</p>
+            <input type="text" placeholder="bányászat, szemétszedés, mozgó-üzlet" required id="ceg_profil">
+
+            <table>
+                <tr>
+            <td><p class="checkboxiras">Elfogadom a webodal által kiírt szabályzatot és vállalom az esetleges következményeket amit a szabályzat megszegése von magával.</p></td>
+            <td><input type="checkbox" required class="checkboxok" size=""></td>
+            </tr> 
+            <tr>
+            <td><p class="checkboxiras">Elfogadom a weboldal által kiírt adatvédelmi szabályzatot.</p></td>
+            <td><input type="checkbox" required class="checkboxok"></td>
+            </tr>
+            </table>
+            <button type="submit" class="submit"> Küldés</button>
+
+        </form>
+    </div>
+    <script  src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="..//scripts/kisiparosalapitasidokumentum.js"></script>
+</body>
+</html>

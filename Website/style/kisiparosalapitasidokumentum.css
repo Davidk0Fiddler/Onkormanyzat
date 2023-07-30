@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.container h1{
+    margin-top: -5px;
+}
+
+.container p{
+    margin-bottom: -1px;
+}
+
+.container input {
+    margin-top: 0;
+    width: 100%;
+}
+
+.container textarea {
+    margin-top: 0;
+    width: 100%;
+}
+
+.checkboxiras {
+    font-size: 15px;
+    text-align: justify;
+    margin-right: 20%;
+}
+
+.checkboxok {
+    float: right;
+    margin-top: -400px;
+}
+
+.submit{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100px;
+    font-size: 20px;
+    background-color: white;
+}
